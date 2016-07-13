@@ -3,6 +3,11 @@
   (diminish 'rinari-minor-mode "Rin"))
 (global-rinari-mode)
 
+(require-package 'rbenv)
+(global-rbenv-mode)
+
+(require-package 'rspec-mode)
+
 (defun update-rails-ctags ()
   (interactive)
   (let ((default-directory (or (rinari-root) default-directory)))
