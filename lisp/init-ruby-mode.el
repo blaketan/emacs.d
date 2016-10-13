@@ -25,6 +25,9 @@
 (after-load 'page-break-lines
   (push 'ruby-mode page-break-lines-modes))
 
+(require-package 'rbenv)
+(global-rbenv-mode)
+
 (require-package 'rspec-mode)
 
 
